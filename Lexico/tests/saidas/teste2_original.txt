@@ -1,0 +1,29 @@
+TOKENS:
+[001:001] CLASS          'class'
+[001:007] IDENTIFIER     'Teste2'
+[001:013] LBRACE         '{'
+[016:002] EOF            '<EOF>'
+
+TABELA DE SIMBOLOS:
+LEXEMA           CATEGORIA      TOKEN          PRIMEIRA_LINHA
+class            RESERVED_WORD  CLASS          init
+int              RESERVED_WORD  INT            init
+string           RESERVED_WORD  STRING         init
+float            RESERVED_WORD  FLOAT          init
+if               RESERVED_WORD  IF             init
+else             RESERVED_WORD  ELSE           init
+do               RESERVED_WORD  DO             init
+while            RESERVED_WORD  WHILE          init
+repeat           RESERVED_WORD  REPEAT         init
+until            RESERVED_WORD  UNTIL          init
+read             RESERVED_WORD  READ           init
+write            RESERVED_WORD  WRITE          init
+and              RESERVED_WORD  AND            init
+or               RESERVED_WORD  OR             init
+not              RESERVED_WORD  NOT            init
+Teste2           IDENTIFIER     IDENTIFIER     1
+
+ERROS LEXICOS:
+linha 2, coluna 1 - comentario de bloco nao terminado
+
+RESULTADO: 1 erro(s) lexico(s) encontrado(s).

@@ -1,0 +1,22 @@
+class Teste6{
+int contador;
+float valor;
+
+{
+  contador := 0;
+  valor := 1.5;
+
+  repeat{
+    if (contador < 3){
+      write("contador = " + contador);
+      valor := valor + 0.5;
+    }
+    else{
+      write("fim parcial");
+    };
+    contador := contador + 1;
+  } until (contador >= 5);
+
+  write("valor final = " + valor);
+}
+}

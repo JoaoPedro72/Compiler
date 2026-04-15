@@ -1,0 +1,101 @@
+TOKENS:
+[001:001] CLASS          'class'
+[001:007] IDENTIFIER     'Teste6'
+[001:013] LBRACE         '{'
+[002:001] INT            'int'
+[002:005] IDENTIFIER     'contador'
+[002:013] SEMICOLON      ';'
+[003:001] FLOAT          'float'
+[003:007] IDENTIFIER     'valor'
+[003:012] SEMICOLON      ';'
+[005:001] LBRACE         '{'
+[006:003] IDENTIFIER     'contador'
+[006:012] ASSIGN         ':='
+[006:015] INTEGER_CONST  '0'
+[006:016] SEMICOLON      ';'
+[007:003] IDENTIFIER     'valor'
+[007:009] ASSIGN         ':='
+[007:012] REAL_CONST     '1.5'
+[007:015] SEMICOLON      ';'
+[009:003] REPEAT         'repeat'
+[009:009] LBRACE         '{'
+[010:005] IF             'if'
+[010:008] LPAREN         '('
+[010:009] IDENTIFIER     'contador'
+[010:018] LT             '<'
+[010:020] INTEGER_CONST  '3'
+[010:021] RPAREN         ')'
+[010:022] LBRACE         '{'
+[011:007] WRITE          'write'
+[011:012] LPAREN         '('
+[011:013] STRING_LITERAL '"contador = "'
+[011:027] PLUS           '+'
+[011:029] IDENTIFIER     'contador'
+[011:037] RPAREN         ')'
+[011:038] SEMICOLON      ';'
+[012:007] IDENTIFIER     'valor'
+[012:013] ASSIGN         ':='
+[012:016] IDENTIFIER     'valor'
+[012:022] PLUS           '+'
+[012:024] REAL_CONST     '0.5'
+[012:027] SEMICOLON      ';'
+[013:005] RBRACE         '}'
+[014:005] ELSE           'else'
+[014:009] LBRACE         '{'
+[015:007] WRITE          'write'
+[015:012] LPAREN         '('
+[015:013] STRING_LITERAL '"fim parcial"'
+[015:026] RPAREN         ')'
+[015:027] SEMICOLON      ';'
+[016:005] RBRACE         '}'
+[016:006] SEMICOLON      ';'
+[017:005] IDENTIFIER     'contador'
+[017:014] ASSIGN         ':='
+[017:017] IDENTIFIER     'contador'
+[017:026] PLUS           '+'
+[017:028] INTEGER_CONST  '1'
+[017:029] SEMICOLON      ';'
+[018:003] RBRACE         '}'
+[018:005] UNTIL          'until'
+[018:011] LPAREN         '('
+[018:012] IDENTIFIER     'contador'
+[018:021] GE             '>='
+[018:024] INTEGER_CONST  '5'
+[018:025] RPAREN         ')'
+[018:026] SEMICOLON      ';'
+[020:003] WRITE          'write'
+[020:008] LPAREN         '('
+[020:009] STRING_LITERAL '"valor final = "'
+[020:026] PLUS           '+'
+[020:028] IDENTIFIER     'valor'
+[020:033] RPAREN         ')'
+[020:034] SEMICOLON      ';'
+[021:001] RBRACE         '}'
+[022:001] RBRACE         '}'
+[022:002] EOF            '<EOF>'
+
+TABELA DE SIMBOLOS:
+LEXEMA           CATEGORIA      TOKEN          PRIMEIRA_LINHA
+class            RESERVED_WORD  CLASS          init
+int              RESERVED_WORD  INT            init
+string           RESERVED_WORD  STRING         init
+float            RESERVED_WORD  FLOAT          init
+if               RESERVED_WORD  IF             init
+else             RESERVED_WORD  ELSE           init
+do               RESERVED_WORD  DO             init
+while            RESERVED_WORD  WHILE          init
+repeat           RESERVED_WORD  REPEAT         init
+until            RESERVED_WORD  UNTIL          init
+read             RESERVED_WORD  READ           init
+write            RESERVED_WORD  WRITE          init
+and              RESERVED_WORD  AND            init
+or               RESERVED_WORD  OR             init
+not              RESERVED_WORD  NOT            init
+Teste6           IDENTIFIER     IDENTIFIER     1
+contador         IDENTIFIER     IDENTIFIER     2
+valor            IDENTIFIER     IDENTIFIER     3
+
+ERROS LEXICOS:
+Nenhum erro lexico encontrado.
+
+RESULTADO: sucesso na analise lexica.

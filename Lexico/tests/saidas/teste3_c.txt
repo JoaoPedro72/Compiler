@@ -1,0 +1,125 @@
+TOKENS:
+[001:001] CLASS          'class'
+[001:007] IDENTIFIER     'MinhaClasse'
+[001:018] LBRACE         '{'
+[002:004] FLOAT          'float'
+[002:010] IDENTIFIER     'a'
+[002:011] COMMA          ','
+[002:013] IDENTIFIER     'b'
+[002:014] COMMA          ','
+[002:016] IDENTIFIER     'c'
+[002:017] COMMA          ','
+[002:019] IDENTIFIER     'maior'
+[002:024] SEMICOLON      ';'
+[004:004] WRITE          'write'
+[004:009] LPAREN         '('
+[004:010] STRING_LITERAL '"Digite um numero"'
+[004:028] RPAREN         ')'
+[004:029] SEMICOLON      ';'
+[005:004] READ           'read'
+[005:008] LPAREN         '('
+[005:009] IDENTIFIER     'a'
+[005:010] RPAREN         ')'
+[005:011] SEMICOLON      ';'
+[006:004] WRITE          'write'
+[006:009] LPAREN         '('
+[006:010] STRING_LITERAL '"Digite outro numero: "'
+[006:033] RPAREN         ')'
+[006:034] SEMICOLON      ';'
+[007:004] READ           'read'
+[007:008] LPAREN         '('
+[007:009] IDENTIFIER     'b'
+[007:010] RPAREN         ')'
+[007:011] SEMICOLON      ';'
+[008:004] WRITE          'write'
+[008:009] LPAREN         '('
+[008:010] STRING_LITERAL '"Digite mais um numero: "'
+[008:035] RPAREN         ')'
+[008:036] SEMICOLON      ';'
+[009:004] READ           'read'
+[009:008] LPAREN         '('
+[009:009] IDENTIFIER     'c'
+[009:010] RPAREN         ')'
+[009:011] SEMICOLON      ';'
+[011:004] IDENTIFIER     'maior'
+[011:010] ASSIGN         ':='
+[011:013] INTEGER_CONST  '0'
+[011:014] SEMICOLON      ';'
+[013:004] IF             'if'
+[013:007] LPAREN         '('
+[013:008] IDENTIFIER     'a'
+[013:010] GT             '>'
+[013:012] IDENTIFIER     'b'
+[013:014] AND            '&&'
+[013:017] IDENTIFIER     'a'
+[013:019] GT             '>'
+[013:021] IDENTIFIER     'c'
+[013:022] RPAREN         ')'
+[013:023] LBRACE         '{'
+[014:007] IDENTIFIER     'maior'
+[014:013] ASSIGN         ':='
+[014:016] IDENTIFIER     'a'
+[014:017] SEMICOLON      ';'
+[015:004] RBRACE         '}'
+[016:004] ELSE           'else'
+[016:008] LBRACE         '{'
+[017:007] IF             'if'
+[017:010] LPAREN         '('
+[017:011] IDENTIFIER     'b'
+[017:013] GT             '>'
+[017:015] IDENTIFIER     'c'
+[017:016] RPAREN         ')'
+[017:017] LBRACE         '{'
+[018:010] IDENTIFIER     'maior'
+[018:016] ASSIGN         ':='
+[018:019] IDENTIFIER     'b'
+[018:020] SEMICOLON      ';'
+[019:007] RBRACE         '}'
+[020:007] ELSE           'else'
+[020:011] LBRACE         '{'
+[021:010] IDENTIFIER     'maior'
+[021:016] ASSIGN         ':='
+[021:019] IDENTIFIER     'c'
+[021:020] SEMICOLON      ';'
+[022:007] RBRACE         '}'
+[023:004] RBRACE         '}'
+[025:004] WRITE          'write'
+[025:009] LPAREN         '('
+[025:010] STRING_LITERAL '"O maior numero e: "'
+[025:030] RPAREN         ')'
+[025:031] SEMICOLON      ';'
+[026:004] WRITE          'write'
+[026:009] LPAREN         '('
+[026:010] IDENTIFIER     'maior'
+[026:015] RPAREN         ')'
+[026:016] SEMICOLON      ';'
+[027:001] RBRACE         '}'
+[027:002] EOF            '<EOF>'
+
+TABELA DE SIMBOLOS:
+LEXEMA           CATEGORIA      TOKEN          PRIMEIRA_LINHA
+class            RESERVED_WORD  CLASS          init
+int              RESERVED_WORD  INT            init
+string           RESERVED_WORD  STRING         init
+float            RESERVED_WORD  FLOAT          init
+if               RESERVED_WORD  IF             init
+else             RESERVED_WORD  ELSE           init
+do               RESERVED_WORD  DO             init
+while            RESERVED_WORD  WHILE          init
+repeat           RESERVED_WORD  REPEAT         init
+until            RESERVED_WORD  UNTIL          init
+read             RESERVED_WORD  READ           init
+write            RESERVED_WORD  WRITE          init
+and              RESERVED_WORD  AND            init
+or               RESERVED_WORD  OR             init
+not              RESERVED_WORD  NOT            init
+MinhaClasse      IDENTIFIER     IDENTIFIER     1
+a                IDENTIFIER     IDENTIFIER     2
+b                IDENTIFIER     IDENTIFIER     2
+c                IDENTIFIER     IDENTIFIER     2
+maior            IDENTIFIER     IDENTIFIER     2
+
+ERROS LEXICOS:
+Nenhum erro lexico encontrado.
+
+RESULTADO: sucesso na analise lexica.

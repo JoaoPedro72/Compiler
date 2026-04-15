@@ -1,0 +1,73 @@
+TOKENS:
+[001:001] CLASS          'class'
+[001:007] IDENTIFIER     'Teste1'
+[001:013] LBRACE         '{'
+[002:003] INT            'int'
+[002:007] IDENTIFIER     'base'
+[002:011] COMMA          ','
+[002:020] SEMICOLON      ';'
+[003:003] FLOAT          'float'
+[003:009] IDENTIFIER     'area'
+[003:013] SEMICOLON      ';'
+[005:003] WRITE          'write'
+[005:008] LPAREN         '('
+[005:009] STRING_LITERAL '"Digite o valor da base:"'
+[005:034] RPAREN         ')'
+[005:035] SEMICOLON      ';'
+[006:003] READ           'read'
+[006:007] LPAREN         '('
+[006:008] IDENTIFIER     'base'
+[006:012] RPAREN         ')'
+[006:013] SEMICOLON      ';'
+[007:003] WRITE          'write'
+[007:008] LPAREN         '('
+[007:009] STRING_LITERAL '"Digite o valor da altura:"'
+[007:036] RPAREN         ')'
+[007:037] SEMICOLON      ';'
+[008:003] READ           'read'
+[008:007] LPAREN         '('
+[008:008] IDENTIFIER     'altura'
+[008:014] SEMICOLON      ';'
+[009:003] IDENTIFIER     'area'
+[009:008] ASSIGN         ':='
+[009:011] IDENTIFIER     'base'
+[009:016] TIMES          '*'
+[009:018] IDENTIFIER     'altura'
+[009:025] DIVIDE         '/'
+[009:027] REAL_CONST     '2.0'
+[010:003] WRITE          'write'
+[010:008] LPAREN         '('
+[010:009] STRING_LITERAL '"A area e: "'
+[010:022] PLUS           '+'
+[010:024] IDENTIFIER     'area'
+[010:028] RPAREN         ')'
+[010:029] SEMICOLON      ';'
+[011:001] RBRACE         '}'
+[011:002] EOF            '<EOF>'
+
+TABELA DE SIMBOLOS:
+LEXEMA           CATEGORIA      TOKEN          PRIMEIRA_LINHA
+class            RESERVED_WORD  CLASS          init
+int              RESERVED_WORD  INT            init
+string           RESERVED_WORD  STRING         init
+float            RESERVED_WORD  FLOAT          init
+if               RESERVED_WORD  IF             init
+else             RESERVED_WORD  ELSE           init
+do               RESERVED_WORD  DO             init
+while            RESERVED_WORD  WHILE          init
+repeat           RESERVED_WORD  REPEAT         init
+until            RESERVED_WORD  UNTIL          init
+read             RESERVED_WORD  READ           init
+write            RESERVED_WORD  WRITE          init
+and              RESERVED_WORD  AND            init
+or               RESERVED_WORD  OR             init
+not              RESERVED_WORD  NOT            init
+Teste1           IDENTIFIER     IDENTIFIER     1
+base             IDENTIFIER     IDENTIFIER     2
+area             IDENTIFIER     IDENTIFIER     3
+altura           IDENTIFIER     IDENTIFIER     8
+
+ERROS LEXICOS:
+linha 2, coluna 13 - identificador invalido iniciado por digito: '1altura'
+
+RESULTADO: 1 erro(s) lexico(s) encontrado(s).

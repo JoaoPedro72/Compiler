@@ -1,0 +1,54 @@
+TOKENS:
+[001:001] CLASS          'class'
+[001:007] IDENTIFIER     'Teste2'
+[001:013] LBRACE         '{'
+[005:003] FLOAT          'float'
+[005:009] IDENTIFIER     'a'
+[005:010] SEMICOLON      ';'
+[007:003] WRITE          'write'
+[007:008] LPAREN         '('
+[007:009] STRING_LITERAL '"Entre com o valor de a: "'
+[007:035] RPAREN         ')'
+[007:036] SEMICOLON      ';'
+[008:003] READ           'read'
+[008:008] LPAREN         '('
+[008:009] IDENTIFIER     'a'
+[008:010] RPAREN         ')'
+[008:011] SEMICOLON      ';'
+[010:003] IF             'if'
+[010:006] LPAREN         '('
+[010:007] IDENTIFIER     'a'
+[010:008] MOD            '%'
+[010:009] INTEGER_CONST  '2'
+[010:011] EQ             '='
+[010:013] INTEGER_CONST  '0'
+[010:014] RPAREN         ')'
+[010:015] LBRACE         '{'
+[011:005] WRITE          'write'
+[011:011] LPAREN         '('
+[011:012] IDENTIFIER     'a'
+[011:013] PLUS           '+'
+[011:015] STRING_LITERAL '"e par"'
+[011:022] RPAREN         ')'
+
+TABELA DE SIMBOLOS:
+LEXEMA           CATEGORIA      TOKEN          PRIMEIRA_LINHA
+class            RESERVED_WORD  CLASS          init
+int              RESERVED_WORD  INT            init
+string           RESERVED_WORD  STRING         init
+float            RESERVED_WORD  FLOAT          init
+if               RESERVED_WORD  IF             init
+else             RESERVED_WORD  ELSE           init
+do               RESERVED_WORD  DO             init
+while            RESERVED_WORD  WHILE          init
+repeat           RESERVED_WORD  REPEAT         init
+until            RESERVED_WORD  UNTIL          init
+read             RESERVED_WORD  READ           init
+write            RESERVED_WORD  WRITE          init
+and              RESERVED_WORD  AND            init
+or               RESERVED_WORD  OR             init
+not              RESERVED_WORD  NOT            init
+Teste2           IDENTIFIER     IDENTIFIER     1
+a                IDENTIFIER     IDENTIFIER     5
+
+RESULTADO: erro lexico na linha 11, coluna 23 - caractere invalido '.'.

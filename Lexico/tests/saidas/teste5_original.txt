@@ -1,0 +1,180 @@
+TOKENS:
+[001:001] CLASS          'class'
+[001:007] IDENTIFIER     'A'
+[006:001] INT            'int'
+[006:005] IDENTIFIER     'i'
+[006:006] SEMICOLON      ';'
+[007:001] FLOAT          'float'
+[007:007] IDENTIFIER     'soma'
+[007:011] COMMA          ','
+[007:013] IDENTIFIER     'altura'
+[007:019] COMMA          ','
+[007:021] IDENTIFIER     'media'
+[007:026] COMMA          ','
+[007:028] IDENTIFIER     'maior'
+[007:033] ASSIGN         ':='
+[007:035] INTEGER_CONST  '0'
+[007:036] COMMA          ','
+[007:038] IDENTIFIER     'menor'
+[007:043] ASSIGN         ':='
+[007:045] INTEGER_CONST  '3'
+[007:046] SEMICOLON      ';'
+[008:001] INT            'int'
+[008:005] IDENTIFIER     'soma'
+[008:009] SEMICOLON      ';'
+[010:001] LBRACE         '{'
+[011:004] IDENTIFIER     'soma'
+[011:009] ASSIGN         ':='
+[011:012] INTEGER_CONST  '0'
+[011:013] SEMICOLON      ';'
+[013:004] WRITE          'write'
+[013:009] LPAREN         '('
+[013:010] STRING_LITERAL '"Quantos dados deseja informar?"'
+[013:042] RPAREN         ')'
+[013:043] SEMICOLON      ';'
+[014:004] READ           'read'
+[014:008] LPAREN         '('
+[014:009] IDENTIFIER     'qtd'
+[014:012] RPAREN         ')'
+[014:013] SEMICOLON      ';'
+[016:004] IDENTIFIER     'IF'
+[016:007] LPAREN         '('
+[016:008] IDENTIFIER     'qtd'
+[016:011] GE             '>='
+[016:013] INTEGER_CONST  '2'
+[016:014] RPAREN         ')'
+[016:015] LBRACE         '{'
+[017:007] IDENTIFIER     'I'
+[017:008] ASSIGN         ':='
+[017:010] INTEGER_CONST  '0'
+[017:011] SEMICOLON      ';'
+[018:007] DO             'do'
+[018:009] LBRACE         '{'
+[019:009] DO             'do'
+[019:011] LBRACE         '{'
+[020:011] WRITE          'write'
+[020:016] LPAREN         '('
+[020:017] STRING_LITERAL '"Altura: "'
+[020:027] RPAREN         ')'
+[020:028] SEMICOLON      ';'
+[021:011] READ           'read'
+[021:015] LPAREN         '('
+[021:016] IDENTIFIER     'altura'
+[021:022] RPAREN         ')'
+[021:023] SEMICOLON      ';'
+[022:009] WHILE          'while'
+[022:015] LPAREN         '('
+[022:016] IDENTIFIER     'altura'
+[022:023] LE             '<='
+[022:026] INTEGER_CONST  '0'
+[022:028] OR             'or'
+[022:031] IDENTIFIER     'altura'
+[022:038] GE             '>='
+[022:040] REAL_CONST     '2.5'
+[022:043] RPAREN         ')'
+[022:044] SEMICOLON      ';'
+[024:009] IDENTIFIER     'soma'
+[024:014] ASSIGN         ':='
+[024:017] IDENTIFIER     'soma'
+[024:021] PLUS           '+'
+[024:022] IDENTIFIER     'altura'
+[024:028] SEMICOLON      ';'
+[025:009] IDENTIFIER     'i'
+[025:011] ASSIGN         ':='
+[025:014] IDENTIFIER     'i'
+[025:016] PLUS           '+'
+[025:018] INTEGER_CONST  '1'
+[025:019] SEMICOLON      ';'
+[026:009] IF             'if'
+[026:012] LPAREN         '('
+[026:013] IDENTIFIER     'altura'
+[026:020] GT             '>'
+[026:022] IDENTIFIER     'maior'
+[026:027] RPAREN         ')'
+[026:028] LBRACE         '{'
+[027:011] IDENTIFIER     'maior'
+[027:017] EQ             '='
+[027:019] IDENTIFIER     'altura'
+[027:025] SEMICOLON      ';'
+[028:009] RBRACE         '}'
+[028:010] SEMICOLON      ';'
+[029:009] IF             'if'
+[029:012] LPAREN         '('
+[029:013] IDENTIFIER     'altura'
+[029:020] LT             '<'
+[029:022] IDENTIFIER     'menor'
+[029:027] RPAREN         ')'
+[029:028] LBRACE         '{'
+[030:011] IDENTIFIER     'menor'
+[030:017] EQ             '='
+[030:019] IDENTIFIER     'Altura'
+[030:025] SEMICOLON      ';'
+[031:009] RBRACE         '}'
+[031:010] SEMICOLON      ';'
+[032:007] RBRACE         '}'
+[033:007] RBRACE         '}'
+[033:008] WHILE          'while'
+[033:013] LPAREN         '('
+[033:014] IDENTIFIER     'i'
+[033:016] LT             '<'
+[033:018] IDENTIFIER     'qtd'
+[033:021] RPAREN         ')'
+[033:022] SEMICOLON      ';'
+[035:007] IDENTIFIER     'media'
+[035:013] ASSIGN         ':='
+[035:016] IDENTIFIER     'soma'
+[035:021] DIVIDE         '/'
+[035:023] IDENTIFIER     'qtd'
+[035:026] SEMICOLON      ';'
+[036:007] WRITE          'write'
+[036:012] LPAREN         '('
+[036:013] STRING_LITERAL '"Media: "'
+[036:023] PLUS           '+'
+[036:025] IDENTIFIER     'media'
+[036:030] RPAREN         ')'
+[036:031] SEMICOLON      ';'
+[037:004] RBRACE         '}'
+[038:004] ELSE           'else'
+[038:008] LBRACE         '{'
+[039:006] WRITE          'write'
+[039:011] LPAREN         '('
+[039:012] STRING_LITERAL '"Quantidade invalida."'
+[039:034] RPAREN         ')'
+[039:035] SEMICOLON      ';'
+[040:004] RBRACE         '}'
+[041:001] RBRACE         '}'
+[041:002] EOF            '<EOF>'
+
+TABELA DE SIMBOLOS:
+LEXEMA           CATEGORIA      TOKEN          PRIMEIRA_LINHA
+class            RESERVED_WORD  CLASS          init
+int              RESERVED_WORD  INT            init
+string           RESERVED_WORD  STRING         init
+float            RESERVED_WORD  FLOAT          init
+if               RESERVED_WORD  IF             init
+else             RESERVED_WORD  ELSE           init
+do               RESERVED_WORD  DO             init
+while            RESERVED_WORD  WHILE          init
+repeat           RESERVED_WORD  REPEAT         init
+until            RESERVED_WORD  UNTIL          init
+read             RESERVED_WORD  READ           init
+write            RESERVED_WORD  WRITE          init
+and              RESERVED_WORD  AND            init
+or               RESERVED_WORD  OR             init
+not              RESERVED_WORD  NOT            init
+A                IDENTIFIER     IDENTIFIER     1
+i                IDENTIFIER     IDENTIFIER     6
+soma             IDENTIFIER     IDENTIFIER     7
+altura           IDENTIFIER     IDENTIFIER     7
+media            IDENTIFIER     IDENTIFIER     7
+maior            IDENTIFIER     IDENTIFIER     7
+menor            IDENTIFIER     IDENTIFIER     7
+qtd              IDENTIFIER     IDENTIFIER     14
+IF               IDENTIFIER     IDENTIFIER     16
+I                IDENTIFIER     IDENTIFIER     17
+Altura           IDENTIFIER     IDENTIFIER     30
+
+ERROS LEXICOS:
+Nenhum erro lexico encontrado.
+
+RESULTADO: sucesso na analise lexica.

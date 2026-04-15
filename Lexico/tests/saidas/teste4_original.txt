@@ -1,0 +1,173 @@
+TOKENS:
+[001:001] LBRACE         '{'
+[004:001] INT            'int'
+[004:005] IDENTIFIER     'idade'
+[004:010] SEMICOLON      ';'
+[005:001] STRING         'string'
+[005:008] IDENTIFIER     'nome'
+[005:012] COMMA          ','
+[005:014] IDENTIFIER     'texto'
+[005:019] SEMICOLON      ';'
+[006:001] FLOAT          'float'
+[006:007] IDENTIFIER     'bonus'
+[006:012] COMMA          ','
+[006:014] IDENTIFIER     'salario'
+[006:021] SEMICOLON      ';'
+[008:001] REPEAT         'repeat'
+[008:007] LBRACE         '{'
+[009:001] WRITE          'write'
+[009:006] LPAREN         '('
+[010:001] READ           'read'
+[010:005] LPAREN         '('
+[010:006] IDENTIFIER     'nome'
+[010:010] RPAREN         ')'
+[010:011] SEMICOLON      ';'
+[011:001] WRITE          'write'
+[011:006] LPAREN         '('
+[011:007] STRING_LITERAL '"Digite o seu sobrenome"'
+[011:031] RPAREN         ')'
+[011:032] SEMICOLON      ';'
+[012:001] READ           'read'
+[012:005] LPAREN         '('
+[012:006] IDENTIFIER     'sobrenome'
+[012:015] RPAREN         ')'
+[012:016] SEMICOLON      ';'
+[013:001] WRITE          'write'
+[013:006] LPAREN         '('
+[013:007] STRING_LITERAL '"Digite a sua idade: "'
+[013:029] RPAREN         ')'
+[013:030] SEMICOLON      ';'
+[014:001] READ           'read'
+[014:005] LPAREN         '('
+[014:006] IDENTIFIER     'idade'
+[014:011] RPAREN         ')'
+[014:012] SEMICOLON      ';'
+[015:001] WRITE          'write'
+[015:006] LPAREN         '('
+[015:007] STRING_LITERAL '"Digite o salario: "'
+[015:027] RPAREN         ')'
+[015:028] SEMICOLON      ';'
+[016:001] READ           'read'
+[016:005] LPAREN         '('
+[016:006] IDENTIFIER     'salrio'
+[016:012] RPAREN         ')'
+[016:013] SEMICOLON      ';'
+[017:001] WRITE          'write'
+[017:006] LPAREN         '('
+[017:007] STRING_LITERAL '"Digite o bonus: "'
+[017:025] RPAREN         ')'
+[017:026] SEMICOLON      ';'
+[018:001] READ           'read'
+[018:005] LPAREN         '('
+[018:006] IDENTIFIER     'bonus'
+[018:011] RPAREN         ')'
+[018:012] SEMICOLON      ';'
+[020:001] IF             'if'
+[020:004] LPAREN         '('
+[020:005] IDENTIFIER     'idade'
+[020:011] GT             '>'
+[020:013] INTEGER_CONST  '0'
+[020:015] AND            '&&'
+[020:018] IDENTIFIER     'salario'
+[020:026] GT             '>'
+[020:028] INTEGER_CONST  '0'
+[020:030] AND            'and'
+[020:034] IDENTIFIER     'bonus'
+[020:040] GE             '>='
+[020:043] INTEGER_CONST  '0'
+[020:044] RPAREN         ')'
+[020:045] LBRACE         '{'
+[021:001] IDENTIFIER     'salarioLiquido'
+[021:016] EQ             '='
+[021:018] PLUS           '+'
+[021:019] IDENTIFIER     'salario'
+[021:027] MINUS          '-'
+[021:029] IDENTIFIER     'salario'
+[021:036] TIMES          '*'
+[021:037] REAL_CONST     '0.11'
+[021:041] RPAREN         ')'
+[021:043] PLUS           '+'
+[021:045] LPAREN         '('
+[021:046] IDENTIFIER     'bonus'
+[021:052] MINUS          '-'
+[021:058] RPAREN         ')'
+[021:059] SEMICOLON      ';'
+[022:001] IDENTIFIER     'texto'
+[022:007] EQ             '='
+[022:009] IDENTIFIER     'nome'
+[022:014] PLUS           '+'
+[022:016] STRING_LITERAL '" "'
+[022:020] PLUS           '+'
+[022:022] IDENTIFIER     'sobrenome'
+[022:032] PLUS           '+'
+[022:034] STRING_LITERAL '":"'
+[022:037] SEMICOLON      ';'
+[023:001] WRITE          'write'
+[023:006] LPAREN         '('
+[023:007] IDENTIFIER     'text'
+[023:011] RPAREN         ')'
+[023:012] SEMICOLON      ';'
+[024:001] WRITE          'write'
+[024:006] LPAREN         '('
+[024:007] STRING_LITERAL '"Salario liquido: "'
+[024:026] RPAREN         ')'
+[024:027] SEMICOLON      ';'
+[025:001] WRITE          'write'
+[025:006] LPAREN         '('
+[025:007] IDENTIFIER     'salario'
+[025:014] RPAREN         ')'
+[025:015] SEMICOLON      ';'
+[026:001] RBRACE         '}'
+[026:002] SEMICOLON      ';'
+[027:001] LBRACE         '{'
+[027:002] UNTIL          'until'
+[027:008] LPAREN         '('
+[027:009] IDENTIFIER     'idade'
+[027:015] LE             '<='
+[027:018] INTEGER_CONST  '0'
+[027:020] OR             'or'
+[027:023] IDENTIFIER     'Salario'
+[027:031] LE             '<='
+[027:034] INTEGER_CONST  '0'
+[027:036] OR             'or'
+[027:039] IDENTIFIER     'bonus'
+[027:045] LT             '<'
+[027:047] INTEGER_CONST  '0'
+[027:048] RPAREN         ')'
+[027:049] SEMICOLON      ';'
+[029:001] RBRACE         '}'
+[029:002] EOF            '<EOF>'
+
+TABELA DE SIMBOLOS:
+LEXEMA           CATEGORIA      TOKEN          PRIMEIRA_LINHA
+class            RESERVED_WORD  CLASS          init
+int              RESERVED_WORD  INT            init
+string           RESERVED_WORD  STRING         init
+float            RESERVED_WORD  FLOAT          init
+if               RESERVED_WORD  IF             init
+else             RESERVED_WORD  ELSE           init
+do               RESERVED_WORD  DO             init
+while            RESERVED_WORD  WHILE          init
+repeat           RESERVED_WORD  REPEAT         init
+until            RESERVED_WORD  UNTIL          init
+read             RESERVED_WORD  READ           init
+write            RESERVED_WORD  WRITE          init
+and              RESERVED_WORD  AND            init
+or               RESERVED_WORD  OR             init
+not              RESERVED_WORD  NOT            init
+idade            IDENTIFIER     IDENTIFIER     4
+nome             IDENTIFIER     IDENTIFIER     5
+texto            IDENTIFIER     IDENTIFIER     5
+bonus            IDENTIFIER     IDENTIFIER     6
+salario          IDENTIFIER     IDENTIFIER     6
+sobrenome        IDENTIFIER     IDENTIFIER     12
+salrio           IDENTIFIER     IDENTIFIER     16
+salarioLiquido   IDENTIFIER     IDENTIFIER     21
+text             IDENTIFIER     IDENTIFIER     23
+Salario          IDENTIFIER     IDENTIFIER     27
+
+ERROS LEXICOS:
+linha 9, coluna 7 - literal string nao terminado
+linha 21, coluna 54 - constante real malformada: '109.'
+
+RESULTADO: 2 erro(s) lexico(s) encontrado(s).

@@ -1,0 +1,111 @@
+TOKENS:
+[001:001] CLASS          'class'
+[001:007] IDENTIFIER     'MinhaClasse'
+[002:001] LBRACE         '{'
+[003:004] FLOAT          'float'
+[003:010] IDENTIFIER     'a'
+[003:011] COMMA          ','
+[003:013] IDENTIFIER     'b'
+[003:014] COMMA          ','
+[003:016] IDENTIFIER     'c'
+[003:017] SEMICOLON      ';'
+[005:004] WRITE          'write'
+[005:009] LPAREN         '('
+[005:010] STRING_LITERAL '"Digite um numero"'
+[005:028] RPAREN         ')'
+[005:029] SEMICOLON      ';'
+[006:004] READ           'read'
+[006:008] LPAREN         '('
+[006:009] IDENTIFIER     'a'
+[006:010] RPAREN         ')'
+[006:011] SEMICOLON      ';'
+[007:004] WRITE          'write'
+[007:009] LPAREN         '('
+[007:010] STRING_LITERAL '"Digite outro numero: "'
+[007:033] RPAREN         ')'
+[007:034] SEMICOLON      ';'
+[008:004] READ           'read'
+[008:008] LPAREN         '('
+[008:009] IDENTIFIER     'b'
+[008:010] RPAREN         ')'
+[008:011] SEMICOLON      ';'
+[009:004] WRITE          'write'
+[009:009] LPAREN         '('
+[010:004] READ           'read'
+[010:008] LPAREN         '('
+[010:009] IDENTIFIER     'c'
+[010:010] SEMICOLON      ';'
+[012:004] IDENTIFIER     'maior'
+[012:010] ASSIGN         ':='
+[012:013] INTEGER_CONST  '0'
+[012:014] SEMICOLON      ';'
+[014:004] IF             'if'
+[014:007] LPAREN         '('
+[014:008] IDENTIFIER     'a'
+[014:010] GT             '>'
+[014:012] IDENTIFIER     'b'
+[014:014] AND            '&&'
+[014:017] IDENTIFIER     'a'
+[014:019] GT             '>'
+[014:021] IDENTIFIER     'c'
+[014:022] RPAREN         ')'
+[015:007] IDENTIFIER     'maior'
+[015:013] EQ             '='
+[015:015] IDENTIFIER     'a'
+[015:016] SEMICOLON      ';'
+[016:004] ELSE           'else'
+[017:007] IF             'if'
+[017:010] LPAREN         '('
+[017:011] IDENTIFIER     'b'
+[017:013] GT             '>'
+[017:015] IDENTIFIER     'c'
+[017:016] RPAREN         ')'
+[018:010] IDENTIFIER     'maior'
+[018:016] EQ             '='
+[018:018] IDENTIFIER     'b'
+[018:019] SEMICOLON      ';'
+[019:007] ELSE           'else'
+[020:010] IDENTIFIER     'maior'
+[020:016] EQ             '='
+[020:018] IDENTIFIER     'c'
+[020:019] SEMICOLON      ';'
+[022:004] WRITE          'write'
+[022:009] LPAREN         '('
+[022:010] STRING_LITERAL '"O maior numero e: "'
+[022:030] RPAREN         ')'
+[022:031] SEMICOLON      ';'
+[023:004] WRITE          'write'
+[023:009] LPAREN         '('
+[023:010] IDENTIFIER     'maior'
+[023:015] RPAREN         ')'
+[023:016] SEMICOLON      ';'
+[024:001] RBRACE         '}'
+[024:002] EOF            '<EOF>'
+
+TABELA DE SIMBOLOS:
+LEXEMA           CATEGORIA      TOKEN          PRIMEIRA_LINHA
+class            RESERVED_WORD  CLASS          init
+int              RESERVED_WORD  INT            init
+string           RESERVED_WORD  STRING         init
+float            RESERVED_WORD  FLOAT          init
+if               RESERVED_WORD  IF             init
+else             RESERVED_WORD  ELSE           init
+do               RESERVED_WORD  DO             init
+while            RESERVED_WORD  WHILE          init
+repeat           RESERVED_WORD  REPEAT         init
+until            RESERVED_WORD  UNTIL          init
+read             RESERVED_WORD  READ           init
+write            RESERVED_WORD  WRITE          init
+and              RESERVED_WORD  AND            init
+or               RESERVED_WORD  OR             init
+not              RESERVED_WORD  NOT            init
+MinhaClasse      IDENTIFIER     IDENTIFIER     1
+a                IDENTIFIER     IDENTIFIER     3
+b                IDENTIFIER     IDENTIFIER     3
+c                IDENTIFIER     IDENTIFIER     3
+maior            IDENTIFIER     IDENTIFIER     12
+
+ERROS LEXICOS:
+linha 9, coluna 10 - literal string nao terminado
+
+RESULTADO: 1 erro(s) lexico(s) encontrado(s).
