@@ -38,10 +38,10 @@ public class SymbolTable {
     }
 
     public void installIdentifier(String lexeme, int line) {
-        symbols.computeIfAbsent(
-            lexeme,
-            ignored -> new Symbol(lexeme, SymbolCategory.IDENTIFIER, TokenType.IDENTIFIER, line)
-        );
+        if (!symbols.containsKey(lexeme)) {
+            Symbol s = new Symbol(lexeme, SymbolCategory.IDENTIFIER, TokenType.IDENTIFIER, line);
+            symbols.put(lexeme, s);
+        }
     }
 
     public String format() {
