@@ -13,8 +13,8 @@ public class Lexer {
         private int column = 1;
 
         Lexer(String input, SymbolTable symbolTable) {
-            this.input = Objects.requireNonNull(input);
-            this.symbolTable = Objects.requireNonNull(symbolTable);
+            this.input = input;
+            this.symbolTable = symbolTable;
         }
 
         List<LexicalError> getErrors() {
